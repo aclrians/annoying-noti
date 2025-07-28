@@ -14,6 +14,7 @@ def monitor():
 
     site = currentSite.stdout.strip()
 
+    # Insert only primary domains!
     badSites = ["x.com","youtube.com","reddit.com"]
 
     if any(sub in site for sub in badSites) :
@@ -25,6 +26,6 @@ def monitor():
 
 while True:
     monitor()
-    time.sleep(5)
+    time.sleep(5)   # Seconds 
 
 
