@@ -26,6 +26,6 @@ def monitor():
 
 while True:
     monitor()
-    time.sleep()   # Seconds 
+    time.sleep(10)   # Seconds 
 
 
