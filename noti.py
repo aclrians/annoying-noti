@@ -15,7 +15,7 @@ def monitor():
     site = currentSite.stdout.strip()
 
     # Insert only primary domains!
-    badSites = ["x.com","youtube.com","reddit.com","gmail.com"]
+    badSites = ["x.com","youtube.com","reddit.com","mail.google.com"]
 
     if any(sub in site for sub in badSites) :
         pync.notify('😆', title = 'Back to Work...')
@@ -26,6 +26,6 @@ def monitor():
 
 while True:
     monitor()
-    time.sleep(10)   # Seconds 
+    time.sleep()   # Seconds 
 
 
